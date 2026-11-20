@@ -4,21 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Emmanuel's Website</title>
 </head>
+
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>Hello! My name is Emmanuel.</p>
-    <p>I am learning HTML.</p>
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Coding</li>
-        <li>Reading</li>
-        <li>Listening to music</li>
-    </ul>
-    <h2>Visit My Favourite Website</h2>
-    <a href="https://www.google.com">Visit Google</a>
-    <br><br>
-    <button>Click Me</button>
+    <header>
+        <h1>Welcome to My Website!</h1>
+        <p>Hello! My name is Emmanuel.</p>
+        <p>I am learning HTML and Web Development.</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#hobbies">My Hobbies</a> |
+        <a href="#registration">Registration</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a student interested in technology.</p>
+            <h3>My Picture</h3>
+            <img src="" alt="Picture of Emmanuel" width="200">
+            <h3>My Favourite Website</h3>
+            <a href="https://www.google.com/">Visit Google</a>
+            <br>
+            <a href="https://www.google.com/">Click Me</a>
+        </section>
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Reading</li>
+                <li>Listening to music</li>
+            </ul>
+            <h3>My Learning Goals</h3>
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Student Information</h2>
+            <table>
+                <caption>Student Details</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Programme</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Emmanuel</td>
+                        <td>Information Technology</td>
+                        <td>300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+            <p>Please fill in your details below.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                    <br><br>
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required>
+                    <br><br>
+                    <label for="othernames">Other Names:</label>
+                    <input type="text" id="othernames" name="othernames">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <br><br>
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <br><br>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" cols="30"></textarea>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Academic Information</legend>
+                    <label for="programme">Select Programme:</label>
+                    <select id="programme" name="programme">
+                        <option value="">Choose Programme</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="CS">Computer Science</option>
+                        <option value="Engineering">Bsc Admin.</option>
+                    </select>
+                    <br><br>
+                    <p>Select Your Interests:</p>
+                    <input type="checkbox" id="coding" name="interests" value="Coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="reading" name="interests" value="Reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="music" name="interests" value="Music">
+                    <label for="music">Music</label>
+                </fieldset>
+                <br>
+                <button type="submit">Register</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Emmanuel's Website. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
